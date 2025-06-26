@@ -1,0 +1,79 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "bykartic",
+  "homepage": "https://bykartic.vercel.app",
+  "items": [
+    {
+      "name": "color-picker-01",
+      "type": "registry:block",
+      "title": "Color Picker",
+      "description": "A simple color input with picker",
+      "dependencies": ["color-convert", "lucide-react"],
+      "registryDependencies": ["popover", "select", "button", "input"],
+      "files": [
+        {
+          "path": "registry/new-york/color-picker/color-picker-01.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/new-york/color-picker/components/color-picker.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "color-picker-02",
+      "type": "registry:block",
+      "title": "Color Picker",
+      "description": "A simple color input with picker which return formated values",
+      "dependencies": ["color-convert", "lucide-react"],
+      "registryDependencies": ["popover", "select", "button", "input"],
+      "files": [
+        {
+          "path": "registry/new-york/color-picker/color-picker-02.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/new-york/color-picker/components/color-picker.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "color-picker-03",
+      "type": "registry:block",
+      "title": "Color Picker",
+      "description": "A color palette input which can add max 4 colors",
+      "dependencies": ["color-convert", "lucide-react"],
+      "registryDependencies": ["popover", "select", "button", "input", "badge"],
+      "files": [
+        {
+          "path": "registry/new-york/color-picker/color-picker-03.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/new-york/color-picker/components/color-picker.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "color-picker-04",
+      "type": "registry:block",
+      "title": "Color Picker",
+      "description": "A color input in Shadcn form",
+      "dependencies": ["color-convert", "lucide-react"],
+      "registryDependencies": ["popover", "select", "button", "input", "badge", "form"],
+      "files": [
+        {
+          "path": "registry/new-york/color-picker/color-picker-04.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/new-york/color-picker/components/color-picker.tsx",
+          "type": "registry:component"
+        }
+      ]
+    }
+  ]
+}
