@@ -18,19 +18,19 @@ export default function CopyCommand({ name }: { name: string }) {
         let command = ""
         switch (type) {
             case "pnpm": {
-                command = `pnpm add https://${process.env.NEXT_PUBLIC_BASE_URL}/r/${name}.json`
+                command = `pnpm add ${process.env.NEXT_PUBLIC_BASE_URL}/r/${name}.json`
                 break
             }
             case "npm": {
-                command = `npm install https://${process.env.NEXT_PUBLIC_BASE_URL}/r/${name}.json`
+                command = `npm install ${process.env.NEXT_PUBLIC_BASE_URL}/r/${name}.json`
                 break
             }
             case "yarn": {
-                command = `yarn add https://${process.env.NEXT_PUBLIC_BASE_URL}/r/${name}.json`
+                command = `yarn add ${process.env.NEXT_PUBLIC_BASE_URL}/r/${name}.json`
                 break
             }
             case "bun": {
-                command = `bunx --bun shadcn@latest add https://${process.env.NEXT_PUBLIC_BASE_URL}/r/${name}.json`
+                command = `bunx --bun shadcn@latest add ${process.env.NEXT_PUBLIC_BASE_URL}/r/${name}.json`
                 break
             }
         }

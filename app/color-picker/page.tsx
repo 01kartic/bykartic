@@ -31,17 +31,17 @@ export default function Page() {
         <h3 className="text-2xl font-semibold tracking-tight mt-10">Example</h3>
 
         <h4 className="flex items-center text-xl font-semibold tracking-tight mt-8 -mb-4"><Dropper /> Color Input</h4>
-        <ComponentPreview size={64} name="color-picker-01" component={ColorPicker01} src='/registry/new-york/blocks/color-picker/color-picker-01.tsx' />
+        <ComponentPreview size={64} name="color-picker-01" component={ColorPicker01} src='/registry/new-york/color-picker/color-picker-01.tsx' />
 
         <h4 className="flex items-center text-xl font-semibold tracking-tight mt-8 -mb-4"><Dropper /> Color Input with Formated Value</h4>
-        <ComponentPreview size={64} name="color-picker-02" component={ColorPicker02} src='/registry/new-york/blocks/color-picker/color-picker-02.tsx' />
+        <ComponentPreview size={64} name="color-picker-02" component={ColorPicker02} src='/registry/new-york/color-picker/color-picker-02.tsx' />
 
         <h4 className="flex items-center text-xl font-semibold tracking-tight mt-8 -mb-2"><Dropper /> Color Palette Input</h4>
         <p className="leading-7 text-muted-foreground pl-10 -mb-4">Can add max 4 colors</p>
-        <ComponentPreview size={64} name="color-picker-03" component={ColorPicker03} src='/registry/new-york/blocks/color-picker/color-picker-03.tsx' />
+        <ComponentPreview size={64} name="color-picker-03" component={ColorPicker03} src='/registry/new-york/color-picker/color-picker-03.tsx' />
 
         <h4 className="flex items-center text-xl font-semibold tracking-tight mt-8 -mb-4"><Dropper /> Color Input in Shadcn Form</h4>
-        <ComponentPreview size={72} name="color-picker-04" component={ColorPicker04} src='/registry/new-york/blocks/color-picker/color-picker-04.tsx' />
+        <ComponentPreview size={72} name="color-picker-04" component={ColorPicker04} src='/registry/new-york/color-picker/color-picker-04.tsx' />
     </>
 }
 

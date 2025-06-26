@@ -33,7 +33,6 @@ export function copyToClipboardWithMeta(value: string, event?: Event) {
 export function CopyButton({
     value,
     className,
-    variant = "ghost",
     event,
     ...props
 }: React.ComponentProps<typeof Button> & {

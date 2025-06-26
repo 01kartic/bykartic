@@ -3,6 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/navbar";
 import { Toaster } from "@/components/ui/sonner";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "by Kartic",
@@ -43,6 +44,7 @@ export default function RootLayout({
             richColors
           />
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );

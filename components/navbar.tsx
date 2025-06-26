@@ -18,7 +18,7 @@ export default function Navbar() {
   const [star, setStar] = React.useState(false);
 
   React.useEffect(() => {
-    const data = fetch("https://api.github.com/repos/jasonrudolph/keyboard")
+    fetch("https://api.github.com/repos/jasonrudolph/keyboard")
       .then((res) => res.json())
       .then((data) => {
         setStar(data.stargazers_count);

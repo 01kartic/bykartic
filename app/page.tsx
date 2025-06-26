@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react"
+import Image from "next/image"
 import { Badge } from "@/components/ui/badge";
 import { ArrowUpRight } from "lucide-react";
 import { useRouter } from "next/navigation";
@@ -36,7 +37,7 @@ export default function Home() {
           {components.map((component, index) =>
             <div className="flex items-center justify-between self-stretch py-2 md:p-2 rounded-xl gap-2 hover:bg-secondary transition-all duration-300 ease-in-out cursor-pointer" key={index} onClick={() => router.replace(component.link)}>
               <div className="flex items-center gap-3">
-                <img src={component.logo} alt={component.name} className="w-10 h-10 rounded-md border" />
+                <Image src={component.logo} alt={component.name} width={40} height={40} className="w-10 h-10 rounded-md border" />
                 <span className="font-bold text-lg">{component.name}</span>
                 {component.new && <Badge variant="secondary" className="rounded-full font-mono">NEW</Badge>}
               </div>
