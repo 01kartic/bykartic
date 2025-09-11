@@ -31,7 +31,7 @@ export default function RootLayout({
             </main>
             <div className="flex flex-col items-center justify-center gap-2 py-2">
               <p className="text-muted-foreground text-sm">© 2025 Kartic</p>
-              <p className="text-muted-foreground text-sm">A project by <a href="https://x.com/intent/follow?screen_name=01_kartic?ref=kartic" target="_blank" className="text-primary font-semibold underline underline-offset-3 hover:text-chart-1">Kartic</a></p>
+              <p className="text-muted-foreground text-sm">A project by <a href="https://x.com/01_kartic/?ref=kartic" target="_blank" className="text-primary font-semibold underline underline-offset-3 hover:text-chart-1">Kartic</a></p>
             </div>
           </div>
           <Toaster
