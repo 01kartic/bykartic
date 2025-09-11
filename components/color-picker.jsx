@@ -93,7 +93,7 @@ function ColorSwatch({ className, ...props }) {
   return (
     <AriaColorSwatch
       className={cn(
-        "w-10 h-9 border rounded-lg focus-visible::border-ring focus-visible::ring-[3px] focus-visible::ring-ring/20 active:ring-[3px] active:ring-ring/20 cursor-pointer",
+        "w-10 h-9 border rounded-lg focus-visible::border-ring focus-visible::ring-[3px] focus-visible::ring-ring/20 active:ring-[3px] active:ring-ring/20 shrink-0 cursor-pointer",
         className
       )}
       style={({ color }) => ({
@@ -107,12 +107,7 @@ function ColorSwatch({ className, ...props }) {
 
 function EyeDropper({ className }) {
   let state = useContext(ColorPickerStateContext);
-
   // Check browser support.
-  if (typeof window !== 'undefined' && !window.EyeDropper) {
-    return 'EyeDropper is not supported in your browser.';
-  }
-
   return window.EyeDropper && (
     <button
       className={cn("size-8 flex justify-center items-center rounded-md transition-all [&>svg]:size-5 shrink-0 [&>svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50", className)}
