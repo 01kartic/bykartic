@@ -1,21 +1,21 @@
 "use client";
 
 import * as React from "react"
-import Image from "next/image"
-import { Badge } from "@/components/ui/badge";
-import { ArrowUpRight } from "lucide-react";
+// import Image from "next/image"
+// import { Badge } from "@/components/ui/badge";
+// import { ArrowUpRight } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
   const router = useRouter();
-  const components = [
-    {
-      name: "Color Picker",
-      logo: "/images/ColorPicker.png",
-      link: "/color-picker",
-      new: true
-    },
-  ]
+  // const components = [
+  //   {
+  //     name: "Color Picker",
+  //     logo: "/images/ColorPicker.png",
+  //     link: "/color-picker",
+  //     new: true
+  //   },
+  // ]
 
   React.useEffect(() => {
     router.replace("/picker-trial");
